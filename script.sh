@@ -1,4 +1,4 @@
 #!/bin/bash
-name=maruthi
-work=devops
-echo" your name is $name and your work is $work"
+
+# Print "Hello, World!" to the terminal
+echo "Hello, World!"
