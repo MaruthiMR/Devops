@@ -1,5 +1,6 @@
 pipeline {
-    agent any
+    agent {
+        label 'Dev'
     stages {
         stage('hostname') {
             steps {
@@ -21,6 +22,7 @@ pipeline {
                 sh 'df -kh'  // Removed the unnecessary "step"
             }
         }
+    }
     }
 }
 
