@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        label 'Dev'
+        label 'test'
     }
     stages {
         stage('hostname') {
