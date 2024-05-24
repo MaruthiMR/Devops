@@ -1,6 +1,7 @@
 pipeline {
     agent {
         label 'Dev'
+    }
     stages {
         stage('hostname') {
             steps {
@@ -12,15 +13,19 @@ pipeline {
                 sh 'uname -a'
             }
         }
-        stage('memory details') {  // Corrected "detais" to "details"
+        stage('memory details') {
             steps {
                 sh 'free -h'
             }
         }
         stage('Disk details') {
             steps {
-                sh 'df -kh'  // Removed the unnecessary "step"
+                sh 'df -kh'
             }
+        }
+    }
+}
+
         }
     }
     }
