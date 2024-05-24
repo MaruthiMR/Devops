@@ -6,23 +6,21 @@ pipeline {
                 sh 'hostname'
             }
         }
-        stage('server details'){
+        stage('server details') {
             steps {
                 sh 'uname -a'
             }
         }
-        stage('memory detais'){
-            step{
+        stage('memory details') {  // Corrected "detais" to "details"
+            steps {
                 sh 'free -h'
             }
         }
-        stage('Disk details'){
-            steps{
-                step
-                sh 'df -kh'
+        stage('Disk details') {
+            steps {
+                sh 'df -kh'  // Removed the unnecessary "step"
             }
         }
     }
-
-
 }
+
